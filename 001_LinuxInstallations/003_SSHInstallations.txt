@@ -1,0 +1,7 @@
+#SSH
+#SETTINGS 
+Network --> NAT to Bridge Apapter
+
+sudo apt-get install open-ssh-server 
+
+ssh-keygen
