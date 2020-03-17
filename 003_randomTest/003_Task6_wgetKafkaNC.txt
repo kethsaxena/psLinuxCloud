@@ -1,0 +1,10 @@
+ #DOWNLOAD KAFKA
+ wget https://apache.cs.utah.edu/kafka/2.3.1/kafka_2.11-2.3.1.tgz
+ tar -xzf kafka_2.11-2.3.1.tgz
+ mv  kafka_2.11-2.3.1.tgz /usr.local
+ 
+ #NET CAT
+ nc loclahost -l 6666
+ nc loclahost  6666
+ 
+ 
