@@ -31,28 +31,11 @@ with open(file, "r") as file:
                 bag[item]=1
             else:
                 bag[item]+=1
-        # for key, value in sorted(bag.items()):
-        #     print(str(key) + '\t' + str(value))
-    
-    # totalUniqueCount = totCount(lines)
-    # unique = getUnique(lines)
-    # print(f"Unique words: {totalUniqueCount}")
-    # #print(unique)
-    # wordfreq = []
-    # final={}
-    # for line in lines:
-    #     wordlist = line.split()
-    #     for w in wordlist:
-    #         wordfreq.append(wordlist.count(w))
-    
-    #     output = zip(wordlist, wordfreq)
-    #     final.update(dict(output))
     
     outfile = open( outputFile, 'w' )
     
     bag=dict(sorted(bag.items(), key=lambda x: x[1],reverse=True))
 
-    #print(bag)
     with open(outputFile, 'w') as f:
         for key in bag.keys():
             f.write("(%s,%s)\n"%(key,bag[key]))
