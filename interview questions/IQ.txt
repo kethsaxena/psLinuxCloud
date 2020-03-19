@@ -1,0 +1,17 @@
+"Coming to Spark:"
+  What is your spark experience (python, scala, etc)
+  Are you familar with Java? (No)
+  Is Python or Scala better for you?  (Python)
+  How do you load the data into the DW from Spark?
+  In Spark-Submit what is the difference between YARN client vs. cluster mode?
+  What exactly happens when you submit a Spark job (what is the workflow)?
+  What is the difference between a managed and external table in Hive?
+  You said you have experience with Parquet. Do you have experience with ORC as well?
+  For unstructured data, ORC or Parquet?
+  How did you make your Kafka code?
+  Can you talk about some best practices when you submit your spark job?
+  How do you minimize shuffling?
+  Any partitioning techniques you would use?
+  How do you fine tune the Spark parameters?
+What AWS services have you used?
+Do you have any questions for me?
