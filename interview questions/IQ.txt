@@ -15,3 +15,155 @@
   How do you fine tune the Spark parameters?
 What AWS services have you used?
 Do you have any questions for me?
+
+
+HashMap: an engineering company, move costumers from on prem to cloud
+Tell me about your experience with Capital One
+So you worked in finance?
+Are you familiar with Data Bricks Delta Lake?
+How would you use CDC in Spark? aka Change Data Capture?
+What have you done in Spark?
+What data bases have you worked with?
+In Hbase how do major and minor compactions work? - Major redoes Hbase block files 
+
+
+
+erry
+Intuit - senior big data engineer
+how are you and your family?
+tell us about your role and responsibilities?
+whats your job title right now?
+how many languages you have undercontrol (python/Scala)?
+in big data you would say you have a good understanding of hadoop?
+with mr or tez?
+suppose you have a job as a hive query do you want to run on tez now you want to run on spark how seamlessly can you do that?
+can you show me how you would do that?
+write a program to create spark session, then read a json and read first column?
+how would you connect to the yarn server in this job?
+is there a confirmation file to change this for the cluster?
+can you read a parquet file?
+what would be the path where would it be?
+when you dont define the path where is the default place?
+what about if I have my file on the cloud?
+Difference between s3n, s3a and s3?
+you have 3 columns in this file would like to know what is max value in the column, would like to know the highest sales for a given company?
+have a huge file and find spark cluster is not performing well how would you start troubleshooting, keeping in mind you have resources on aws?
+how would you find out if there is data skewness what are your steps?
+also so on emr console where would you check?
+what is the default location of the spark logs?
+supposed one job gets executed running fine for 1-2 hours you look at the logs and shows job short on memory what would be the parameter the change the memory, do you know the syntax?
+do you just want to increase driver memory or executor memory as well, in what cases would you increase driver vs execute?
+suppose you want to run on client mode vs cluster mode do you still need memory for the executor?
+suppose you have spark job on aws cloud and want jvm metrics is there a tool for this?
+are you interested in troubleshooting build shooting jobs and administrating them?
+have server on aws and want to fetch files from S3 instance to pycharm and modify files on ec2?
+difference between avro and parquet?
+where a have you worked with shell scripts and how?
+how would you have install package on es2 instance?
+does tellnet install or will it use any other switch aswell?
+-we have dif segments that monitor different clusters
+-we are trying to move things to redshift
+-using sage maker for machine learning, where people can run exploratory jobs, emr connectivity from Jupiter notebooks and modeling, training models (edited) 
+
+
+
+3/27 Caleb - Driscoll’s
+Tell me about you experience?
+Are you familiar with airflow?
+Recent project?
+// talk about COVID
+how you comfortable with python?
+what about scala?
+I have 100 gb data 3 node cluster, 5gb per node 15 node,  5 core per machine, so a total of 15gn, how would you process that data?  // you can split the data,and run it one after,not run it all at once, alternatively, if you run all at once it will take a while. would probably create 10 executors,1 core, and 1 gb per executor, i can split the data into 3, with 4 core, and 4 gb per executor, i would repartition the data into 3, i would use the 3 core for the overhead
+how to improve the performance?
+use executors, increase, or decrease them, along with the memories
+we can remove unnecessary data before joins
+you use broadcast variables if possible
+I have used broadcast variables
+in one of my praojects\to send a small to able to the clusters,to do aggregation on a bigger table
+9. Parquet vs Avro?
+10. // code challenges - SQL, drops the duplicates, rank marks, groupby, view, window function ..
+// code challenges:
+I/p: 100 GB RDBMS data
+Spark cluster capacity - 3 node
+node configuration
+RAM - 5 GB
+ROM - 50 GB
+Core - 5
+import org.apache.
+Q1
+val inputDF = Seq(
+Row(“James,,Smith”,List(“Java”,“Scala”,“C++“),List(“Spark”,“Java”),“OH”,“CA”),
+Row(“Michael,Rose,“,List(“Spark”,“Java”,“C++“),List(“Spark”,“Java”),“NY”,“NJ”),
+Row(“Robert,,Williams”,List(“CSharp”,“VB”),List(“Spark”,“Python”),“UT”,“NV”)
+)
+.toDF(“name”,“languagesAtSchool”,“languagesAtWork”,“currentState”,“previousState”)
+val newDF = inputDF.select(“name”,  explode(“languagesAtSchool”)).show()
+val df2 = newDF.dropDuplicates(“name”,“)
+o/p:
+name            languagesAtSchool
+James,,Smith    Java
+James,,Smith    Scala
+James,,Smith    C++
+Q2
+Student table
+id       name    dept_id     marks
+1       abcd      21        67
+2       sjfb      21        34
+3       kjsf      23        45
+4       gkjh      21        34
+5       sjjk      23        45
+6       skjb      24        78
+7       aksj      24        56
+8       jshj      23        56
+9       aksf      21        78
+val df = spark.read.table(“student_table”)
+val orderedDf = df.orderBy(desc(“marks”)).groupBy(“dept_id”)
+# given a list of strings, group the anagrams together
+list = [‘cat’, ‘dog’, ‘tac’, ‘god’, ‘good’, ‘wow’, ‘act’]
+Output:
+[‘good’]
+[‘wow’]
+[‘dog’, ‘god’]
+[‘cat’, ‘tac’, ‘act’]
+def find_ana(ana_list):
+ #   list_length = len(ana_list)
+    grouped_anas = []
+    index = 0
+    while  index < len(ana_list):
+        temp_ana = ana_list[index]
+        is_ana = False
+        for ana in ana_list:
+            if len(ana) == len(temp_ana):
+                for x in temp_ana:
+                    if not in ana:
+                        break
+                is_ana = True
+        index += 1
+catt , ccat
+
+
+
+Jerry DISH
+1) Quickly describe your experience with big data?
+2) Who's your last client?
+3) On a daily basis, what is your typical work day?
+4) Spark (scala) experience?
+5) Architecture of spark and use case?
+6) What is happen within spark job? //How does it get devided up?
+7) Two tables, join, sort then to table. How? --using spark 
+8) How many stages in this job?
+9) What is action/transformation?
+10) What is a dag? What do you understand from dag? Stages, tranfomation...etc
+11) What is narrow and wide transformation?
+12) Join is narrow or wide transformation?
+13) Wide table and smaller table ?
+14) Have you used broadcasting table to reduce shuffling?
+15) File formats have you used?
+16) Troubleshooting spark application?
+17) Performance tune the spark job?
+18) Have you done data split?
+
+
+
+
